@@ -3,15 +3,15 @@ import { ProfileInfo, Project, SkillCategoryGroup, ExperienceItem, EducationItem
 export const initialProfile: ProfileInfo = {
   name: "Muchiri",
   role: "Cybersecurity Practitioner & Full-Stack Developer",
-  tagline: "Practical cybersecurity practitioner and full-stack software developer focused on engineering robust applications and exploring offensive and defensive security domains.",
-  headline: "Security-minded Builder • Full-Stack Developer • Technical Leader",
+  tagline: "I build secure, practical digital products and help teams turn software ideas into reliable, user-focused solutions.",
+  headline: "Cybersecurity • Full-Stack Development • Secure Product Delivery",
   location: "Nyandarua, Kenya (Open to Remote)",
   email: "martingatimu69@gmail.com",
-  status: "Available for cybersecurity, software engineering, and technical leadership opportunities",
+  status: "Open to cybersecurity, software engineering, and technical opportunities",
   bioParagraphs: [
-    "Hi there, I'm Muchiri. I’m a practical cybersecurity practitioner and full-stack software developer focused on engineering robust applications and exploring offensive and defensive security domains.",
-    "My work sits at the intersection of secure software engineering, system design, and hands-on technical leadership. I enjoy building resilient systems, mentoring peers, and translating security concepts into practical, deployable solutions.",
-    "I’m passionate about technical leadership, peer mentoring, and building secure, high-impact systems that solve real-world problems while staying resilient under pressure."
+    "Hi, I’m Muchiri — a cybersecurity practitioner and full-stack developer focused on building secure, dependable software that solves real-world problems.",
+    "My work sits at the intersection of cybersecurity, software engineering, and practical product delivery. I enjoy creating resilient systems, improving user trust, and translating security concepts into actionable implementation.",
+    "I’m especially interested in building secure digital experiences, strengthening application safety, and contributing to teams that value technical thinking, reliability, and meaningful impact."
   ],
   stats: [
     { label: "Production Services", value: "45+", subtext: "Deployed & Maintained" },

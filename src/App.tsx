@@ -57,6 +57,17 @@ function PortfolioApp() {
     }
   };
 
+  const handleOpenResume = () => {
+    const resumeUrl = profile.resumeUrl;
+
+    if (resumeUrl && /^https?:\/\//i.test(resumeUrl)) {
+      window.open(resumeUrl, '_blank', 'noopener,noreferrer');
+      return;
+    }
+
+    setIsResumeOpen(true);
+  };
+
   return (
     <div className={`min-h-screen transition-colors duration-300 selection:bg-white/20 selection:text-white overflow-x-hidden font-sans ${
       theme === 'dark' 
@@ -67,7 +78,7 @@ function PortfolioApp() {
       {/* Top Navigation */}
       <Navbar
         profile={profile}
-        onOpenResume={() => setIsResumeOpen(true)}
+        onOpenResume={handleOpenResume}
         onOpenCustomizer={() => setIsCustomizerOpen(true)}
       />
 
@@ -76,13 +87,13 @@ function PortfolioApp() {
         {/* 1. Hero Section */}
         <HeroSection
           profile={profile}
-          onOpenResume={() => setIsResumeOpen(true)}
+          onOpenResume={handleOpenResume}
         />
 
         {/* 2. Biography & Engineering Background */}
         <BioSection
           profile={profile}
-          onOpenResume={() => setIsResumeOpen(true)}
+          onOpenResume={handleOpenResume}
         />
 
         {/* 3. Featured Projects Showcase */}
@@ -110,7 +121,7 @@ function PortfolioApp() {
         {/* 8. Contact & Professional Profiles */}
         <ContactSection
           profile={profile}
-          onOpenResume={() => setIsResumeOpen(true)}
+          onOpenResume={handleOpenResume}
         />
       </main>
 

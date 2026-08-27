@@ -146,7 +146,6 @@ export const Navbar: React.FC<NavbarProps> = ({ profile, onOpenResume, onOpenCus
               className="flex items-center gap-2 px-3.5 py-2 rounded-lg text-[11px] uppercase tracking-[0.18em] font-medium text-neutral-300 dark:text-neutral-300 light:text-neutral-800 bg-[#121212] dark:bg-[#121212] light:bg-[#f0f0ee] hover:bg-[#1a1a1a] dark:hover:bg-[#1a1a1a] light:hover:bg-[#e4e4e2] border border-white/10 dark:border-white/10 light:border-black/10 hover:border-white/25 transition-all"
             >
               <FileText className="w-3.5 h-3.5 text-neutral-300 dark:text-neutral-300 light:text-neutral-700" />
-              <span>Resume</span>
             </button>
 
             <a
@@ -180,7 +179,6 @@ export const Navbar: React.FC<NavbarProps> = ({ profile, onOpenResume, onOpenCus
               className="p-2 rounded-lg text-neutral-300 dark:text-neutral-300 light:text-neutral-800 bg-[#121212] dark:bg-[#121212] light:bg-[#f0f0ee] border border-white/10 dark:border-white/10 light:border-black/10 text-xs font-medium flex items-center gap-1"
             >
               <FileText className="w-3.5 h-3.5" />
-              <span>CV</span>
             </button>
 
             <button
@@ -234,7 +232,6 @@ export const Navbar: React.FC<NavbarProps> = ({ profile, onOpenResume, onOpenCus
               className="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs uppercase tracking-wider font-semibold text-neutral-200 dark:text-neutral-200 light:text-neutral-900 bg-[#141414] dark:bg-[#141414] light:bg-[#f0f0ee] border border-white/10 dark:border-white/10 light:border-black/10"
             >
               <FileText className="w-4 h-4" />
-              <span>View Full Resume</span>
             </button>
 
             <button

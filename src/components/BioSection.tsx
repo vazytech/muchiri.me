@@ -88,7 +88,6 @@ export const BioSection: React.FC<BioSectionProps> = ({ profile, onOpenResume })
                 className="flex items-center gap-2 px-5 py-3 rounded-lg text-xs uppercase tracking-[0.2em] font-medium text-white bg-[#141414] hover:bg-[#1f1f1f] border border-white/10 hover:border-white/30 transition-all shadow-sm active:scale-98"
               >
                 <FileText className="w-4 h-4 text-neutral-300" />
-                <span>Read Full Professional Resume</span>
                 <ArrowUpRight className="w-3.5 h-3.5 text-neutral-400" />
               </button>
             </div>
