@@ -9,7 +9,6 @@ import {
   Menu, 
   X, 
   Sparkles,
-  Sliders,
   Sun,
   Moon
 } from 'lucide-react';
@@ -19,10 +18,9 @@ import { useTheme } from '../context/ThemeContext';
 interface NavbarProps {
   profile: ProfileInfo;
   onOpenResume: () => void;
-  onOpenCustomizer: () => void;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ profile, onOpenResume, onOpenCustomizer }) => {
+export const Navbar: React.FC<NavbarProps> = ({ profile, onOpenResume }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('hero');
@@ -132,15 +130,6 @@ export const Navbar: React.FC<NavbarProps> = ({ profile, onOpenResume, onOpenCus
             </button>
 
             <button
-              onClick={onOpenCustomizer}
-              id="customize-profile-btn"
-              title="Edit / Customize Portfolio Details"
-              className="p-2.5 rounded-lg text-neutral-400 dark:text-neutral-400 light:text-neutral-600 hover:text-white dark:hover:text-white light:hover:text-black hover:bg-white/5 dark:hover:bg-white/5 light:hover:bg-black/5 border border-white/10 dark:border-white/10 light:border-black/10 hover:border-white/25 transition-all"
-            >
-              <Sliders className="w-4 h-4" />
-            </button>
-
-            <button
               onClick={onOpenResume}
               id="view-resume-nav-btn"
               className="flex items-center gap-2 px-3.5 py-2 rounded-lg text-[11px] uppercase tracking-[0.18em] font-medium text-neutral-300 dark:text-neutral-300 light:text-neutral-800 bg-[#121212] dark:bg-[#121212] light:bg-[#f0f0ee] hover:bg-[#1a1a1a] dark:hover:bg-[#1a1a1a] light:hover:bg-[#e4e4e2] border border-white/10 dark:border-white/10 light:border-black/10 hover:border-white/25 transition-all"
@@ -234,17 +223,6 @@ export const Navbar: React.FC<NavbarProps> = ({ profile, onOpenResume, onOpenCus
               <FileText className="w-4 h-4" />
             </button>
 
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onOpenCustomizer();
-              }}
-              id="mobile-menu-customize-btn"
-              className="w-full flex items-center justify-center gap-2 py-2 rounded-lg text-[11px] uppercase tracking-wider font-medium text-neutral-400 dark:text-neutral-400 light:text-neutral-700 bg-white/5 dark:bg-white/5 light:bg-black/5 border border-white/5 dark:border-white/5 light:border-black/5"
-            >
-              <Sliders className="w-3.5 h-3.5" />
-              <span>Customize Portfolio Details</span>
-            </button>
           </div>
         </div>
       )}

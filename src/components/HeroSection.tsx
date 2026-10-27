@@ -81,7 +81,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ profile, onOpenResume 
               </span>
               <span className="flex items-center gap-1.5 bg-[#111111] px-3 py-1.5 rounded-lg border border-white/10">
                 <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-                AWS & GCP Certified Architect
+                Cybersecurity & cloud security
               </span>
             </div>
 
@@ -175,11 +175,11 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ profile, onOpenResume 
                 <a
                   href={profile.socials.calendly}
                   id="hero-calendly-link"
-                  aria-label="Call or book with 0745422986"
+                  aria-label="Email Muchiri"
                   className="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-[#111111] hover:bg-white hover:text-black text-neutral-300 border border-white/10 text-xs font-mono uppercase tracking-wider transition-all"
                 >
                   <Calendar className="w-3.5 h-3.5" />
-                  <span>Book / Call</span>
+                  <span>Email Me</span>
                 </a>
               )}
 

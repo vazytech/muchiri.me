@@ -8,7 +8,6 @@ import {
   initialCertifications, 
   initialTestimonials
 } from './data/portfolioData';
-import { ProfileInfo } from './types';
 import { ThemeProvider, useTheme } from './context/ThemeContext';
 import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
@@ -19,46 +18,16 @@ import { ExperienceSection } from './components/ExperienceSection';
 import { TestimonialsSection } from './components/TestimonialsSection';
 import { ContactSection } from './components/ContactSection';
 import { ResumeModal } from './components/ResumeModal';
-import { CustomizerDrawer } from './components/CustomizerDrawer';
 import { Footer } from './components/Footer';
 
 function PortfolioApp() {
-  const [profile, setProfile] = useState<ProfileInfo>(() => {
-    try {
-      const saved = localStorage.getItem('portfolio_profile_custom');
-      if (saved) {
-        return JSON.parse(saved);
-      }
-    } catch (e) {
-      console.warn('Could not parse saved profile:', e);
-    }
-    return initialProfile;
-  });
+  const profile = initialProfile;
 
   const [isResumeOpen, setIsResumeOpen] = useState(false);
-  const [isCustomizerOpen, setIsCustomizerOpen] = useState(false);
   const { theme } = useTheme();
 
-  const handleSaveProfile = (newProfile: ProfileInfo) => {
-    setProfile(newProfile);
-    try {
-      localStorage.setItem('portfolio_profile_custom', JSON.stringify(newProfile));
-    } catch (e) {
-      console.error('Failed to persist profile:', e);
-    }
-  };
-
-  const handleResetDefault = () => {
-    setProfile(initialProfile);
-    try {
-      localStorage.removeItem('portfolio_profile_custom');
-    } catch (e) {
-      console.error('Failed to reset profile:', e);
-    }
-  };
-
   const handleOpenResume = () => {
-    const resumeUrl = profile.resumeUrl;
+    const resumeUrl = profile.socials.resumeUrl;
 
     if (resumeUrl && /^https?:\/\//i.test(resumeUrl)) {
       window.open(resumeUrl, '_blank', 'noopener,noreferrer');
@@ -79,7 +48,6 @@ function PortfolioApp() {
       <Navbar
         profile={profile}
         onOpenResume={handleOpenResume}
-        onOpenCustomizer={() => setIsCustomizerOpen(true)}
       />
 
       {/* Main Content Sections */}
@@ -137,15 +105,6 @@ function PortfolioApp() {
         education={initialEducation}
         certifications={initialCertifications}
         skillGroups={initialSkillGroups}
-      />
-
-      {/* Live Profile Customizer Drawer */}
-      <CustomizerDrawer
-        isOpen={isCustomizerOpen}
-        onClose={() => setIsCustomizerOpen(false)}
-        profile={profile}
-        onSaveProfile={handleSaveProfile}
-        onResetDefault={handleResetDefault}
       />
 
     </div>

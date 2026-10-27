@@ -39,7 +39,7 @@ export const BioSection: React.FC<BioSectionProps> = ({ profile, onOpenResume })
             Engineering robust digital infrastructure with <span className="underline underline-offset-8 decoration-white/20">clarity, rigor, and aesthetic craft</span>.
           </h2>
           <p className="mt-4 text-base sm:text-lg text-neutral-400 font-light leading-relaxed">
-            A comprehensive look at my engineering journey, problem-solving ethos, and architectural philosophy.
+            A practical look at my cybersecurity journey, security interests, and cloud security direction.
           </p>
         </div>
 
@@ -61,14 +61,14 @@ export const BioSection: React.FC<BioSectionProps> = ({ profile, onOpenResume })
               </h3>
               <div className="flex flex-wrap gap-2.5">
                 {[
-                  "Distributed Systems",
-                  "High-Throughput Backends",
-                  "Cloud Native (Kubernetes / AWS)",
-                  "Zero-Trust API Gateways",
-                  "Modern Full-Stack React",
-                  "Low-Latency Event Streaming",
-                  "Database Performance & Indexing",
-                  "Developer Tooling & DX"
+                  "Security Operations",
+                  "Application Security",
+                  "Cloud Security",
+                  "Identity & Access Management",
+                  "Network Security",
+                  "Threat Detection & Monitoring",
+                  "Incident Response",
+                  "Security Awareness"
                 ].map((domain, i) => (
                   <span
                     key={i}

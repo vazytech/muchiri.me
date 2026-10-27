@@ -1,32 +1,32 @@
 import { ProfileInfo, Project, SkillCategoryGroup, ExperienceItem, EducationItem, CertificationItem, TestimonialItem, TalkItem } from '../types';
 
 export const initialProfile: ProfileInfo = {
-  name: "Muchiri",
-  role: "Cybersecurity Practitioner & Full-Stack Developer",
-  tagline: "I build secure, practical digital products and help teams turn software ideas into reliable, user-focused solutions.",
-  headline: "Cybersecurity • Full-Stack Development • Secure Product Delivery",
+  name: "Muchiri Gatimu",
+  role: "Cybersecurity Engineer | Aspiring Cloud Security Engineer",
+  tagline: "I help protect systems, applications, and cloud environments through practical security engineering, monitoring, and continuous learning.",
+  headline: "Cybersecurity Engineering • Cloud Security • Secure Infrastructure",
   location: "Nyandarua, Kenya (Open to Remote)",
   email: "martingatimu69@gmail.com",
-  status: "Open to cybersecurity, software engineering, and technical opportunities",
+  status: "Open to cybersecurity and cloud security opportunities",
   bioParagraphs: [
-    "Hi, I’m Muchiri — a cybersecurity practitioner and full-stack developer focused on building secure, dependable software that solves real-world problems.",
-    "My work sits at the intersection of cybersecurity, software engineering, and practical product delivery. I enjoy creating resilient systems, improving user trust, and translating security concepts into actionable implementation.",
-    "I’m especially interested in building secure digital experiences, strengthening application safety, and contributing to teams that value technical thinking, reliability, and meaningful impact."
+    "Hi, I’m Muchiri — a cybersecurity engineer focused on protecting systems, applications, and digital services.",
+    "I’m building deeper expertise in cloud security, identity and access management, secure infrastructure, monitoring, and incident response.",
+    "I’m open to cybersecurity and cloud security opportunities where I can apply practical security thinking, learn from experienced teams, and contribute responsibly."
   ],
   stats: [
-    { label: "Production Services", value: "45+", subtext: "Deployed & Maintained" },
-    { label: "System Uptime", value: "99.99%", subtext: "SLA Maintained" },
-    { label: "Community & OSS", value: "1.5k+", subtext: "GitHub Stars" }
+    { label: "Primary Focus", value: "Security", subtext: "Systems & applications" },
+    { label: "Cloud Direction", value: "Cloud", subtext: "Security engineering" },
+    { label: "Availability", value: "Open", subtext: "Cybersecurity opportunities" }
   ],
   socials: {
-    github: "https://github.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://x.com",
+    github: undefined,
+    linkedin: undefined,
+    twitter: undefined,
     email: "martingatimu69@gmail.com",
-    calendly: "tel:+44745422986",
+    calendly: "mailto:martingatimu69@gmail.com",
     website: "https://mkulima-nyandarua.vercel.app/",
-    medium: "https://medium.com",
-    resumeUrl: "https://drive.google.com/file/d/1PJz2NYfGh3Bbw9tRxl0Whvbrgq0DsNOt/view?usp=drive_link"
+    medium: undefined,
+    resumeUrl: "https://docs.google.com/document/d/1DG_2ByI8etQFa1w2jwtG28hyP1Asny9v/edit?usp=sharing"
   },
   principles: [
     {
@@ -68,7 +68,7 @@ export const initialProjects: Project[] = [
     ],
     techStack: ["React", "TypeScript", "Node.js", "Vercel", "Web App", "Cloud"],
     liveUrl: "https://mkulima-nyandarua.vercel.app/",
-    githubUrl: "https://github.com",
+    githubUrl: undefined,
     featured: true,
     colorGradient: "from-emerald-600 to-green-950",
     stars: 180
@@ -92,8 +92,8 @@ export const initialProjects: Project[] = [
       { label: "Cost Reduction", value: "42%" }
     ],
     techStack: ["Go", "Rust", "gRPC", "Kubernetes", "Redis", "eBPF", "Prometheus", "Docker"],
-    liveUrl: "https://github.com",
-    githubUrl: "https://github.com",
+    liveUrl: undefined,
+    githubUrl: undefined,
     featured: true,
     colorGradient: "from-blue-600 to-indigo-900",
     stars: 540
@@ -117,8 +117,8 @@ export const initialProjects: Project[] = [
       { label: "Data Pipeline", value: "<4s lag" }
     ],
     techStack: ["TypeScript", "React", "Kafka", "ClickHouse", "Node.js", "WebSockets", "Wasm", "TailwindCSS"],
-    liveUrl: "https://github.com",
-    githubUrl: "https://github.com",
+    liveUrl: undefined,
+    githubUrl: undefined,
     featured: true,
     colorGradient: "from-emerald-600 to-teal-950",
     stars: 380
@@ -142,8 +142,8 @@ export const initialProjects: Project[] = [
       { label: "Onboarding Time", value: "-92%" }
     ],
     techStack: ["React 19", "TypeScript", "Node.js", "Docker", "WebSockets", "CRDTs", "Linux", "TailwindCSS"],
-    liveUrl: "https://github.com",
-    githubUrl: "https://github.com",
+    liveUrl: undefined,
+    githubUrl: undefined,
     featured: true,
     colorGradient: "from-purple-600 to-violet-950",
     stars: 620
@@ -167,8 +167,8 @@ export const initialProjects: Project[] = [
       { label: "Reconciliation", value: "Instant" }
     ],
     techStack: ["TypeScript", "PostgreSQL", "Next.js", "Tailwind CSS", "Prisma", "Jest", "Docker"],
-    liveUrl: "https://github.com",
-    githubUrl: "https://github.com",
+    liveUrl: undefined,
+    githubUrl: undefined,
     featured: false,
     colorGradient: "from-amber-600 to-amber-950",
     stars: 210
@@ -192,8 +192,8 @@ export const initialProjects: Project[] = [
       { label: "CI Regressions", value: "0" }
     ],
     techStack: ["Rust", "TypeScript AST", "CLI", "GitHub Actions", "WebAssembly"],
-    liveUrl: "https://github.com",
-    githubUrl: "https://github.com",
+    liveUrl: undefined,
+    githubUrl: undefined,
     featured: false,
     colorGradient: "from-rose-600 to-rose-950",
     stars: 490
@@ -217,8 +217,8 @@ export const initialProjects: Project[] = [
       { label: "Alert Clustering", value: "-65% noise" }
     ],
     techStack: ["Python", "TypeScript", "FastAPI", "Vector DB", "OpenTelemetry", "Docker"],
-    liveUrl: "https://github.com",
-    githubUrl: "https://github.com",
+    liveUrl: undefined,
+    githubUrl: undefined,
     featured: false,
     colorGradient: "from-cyan-600 to-blue-950",
     stars: 310
@@ -312,73 +312,10 @@ export const initialExperiences: ExperienceItem[] = [
   
 ];
 
-export const initialEducation: EducationItem[] = [
-  {
-    id: "edu-1",
-    degree: "B.S. in Computer Science & Cybersecurity",
-    institution: "University of California, Berkeley",
-    period: "2014 - 2018",
-    location: "Berkeley, CA",
-    details: [
-      "Concentration in Distributed Systems, Operating Systems, and Algorithms",
-      "Dean's Honor List (4 semesters)",
-      "President, Association for Computing Machinery (ACM) Student Chapter"
-    ]
-  }
-];
+export const initialEducation: EducationItem[] = [];
 
-export const initialCertifications: CertificationItem[] = [
-  {
-    id: "cert-1",
-    title: "AWS Certified Solutions Architect – Professional",
-    issuer: "Amazon Web Services",
-    date: "2024",
-    badgeCode: "AWS-PSA-94821",
-    verifyUrl: "https://aws.amazon.com"
-  },
-  {
-    id: "cert-2",
-    title: "Certified Kubernetes Administrator (CKA)",
-    issuer: "Cloud Native Computing Foundation (CNCF)",
-    date: "2023",
-    badgeCode: "CKA-77319",
-    verifyUrl: "https://www.cncf.io"
-  },
-  {
-    id: "cert-3",
-    title: "Google Cloud Professional Cloud Architect",
-    issuer: "Google Cloud",
-    date: "2023",
-    badgeCode: "GCP-PCA-10492",
-    verifyUrl: "https://cloud.google.com"
-  }
-];
+export const initialCertifications: CertificationItem[] = [];
 
-export const initialTestimonials: TestimonialItem[] = [
-  {
-    id: "test-1",
-    author: "Elena Rostova",
-    role: "VP of Engineering",
-    company: "Apex Cloud Technologies",
-    quote: "Martin is the rare engineer who can effortlessly transition from deep distributed systems debugging to crafting elegant UI interactions. His technical rigor and architectural leadership elevated our entire engineering organization.",
-    avatarBg: "bg-indigo-600"
-  },
-  {
-    id: "test-2",
-    author: "David Chen",
-    role: "Principal Architect",
-    company: "Veloce Financial",
-    quote: "When we faced catastrophic latency bottlenecks during high-volume trading hours, Martin redesigned our core ingestion pipeline in record time. His deep grasp of systems and pragmatic approach were invaluable.",
-    avatarBg: "bg-emerald-600"
-  },
-  {
-    id: "test-3",
-    author: "Sarah Jenkins",
-    role: "Director of Product",
-    company: "Synthetix Labs",
-    quote: "Working with Martin is a dream for any product manager. He doesn't just build specs—he challenges assumptions, spots edge cases early, and crafts experiences that delight users.",
-    avatarBg: "bg-purple-600"
-  }
-];
+export const initialTestimonials: TestimonialItem[] = [];
 
 

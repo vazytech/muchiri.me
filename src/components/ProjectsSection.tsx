@@ -51,13 +51,13 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) =>
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
           <div className="max-w-2xl">
             <div className="text-[10px] uppercase tracking-[0.3em] text-neutral-400 font-mono mb-4">
-              02 / Selected Works & Architecture
+              02 / Selected Security Work
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif italic text-white tracking-tight">
-              Production Projects & Systems
+              Security Projects & Labs
             </h2>
             <p className="mt-3 text-neutral-400 text-sm sm:text-base font-light leading-relaxed">
-              Explore distributed backends, cloud architectures, and full-stack applications with measured performance outcomes.
+              Explore practical security projects, cloud-focused work, and technical experiments with clear implementation details.
             </p>
           </div>
 
@@ -65,10 +65,10 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) =>
           <div className="flex items-center gap-3 text-[11px] font-mono text-neutral-400 bg-[#111111] p-3 rounded-lg border border-white/10 self-start md:self-auto">
             <span className="flex items-center gap-1.5 text-white font-medium">
               <CheckCircle className="w-3.5 h-3.5 text-emerald-400" />
-              100% Tested
+              Selected work
             </span>
             <span className="text-neutral-600">•</span>
-            <span>Production Proven</span>
+            <span>Built with care</span>
           </div>
         </div>
 

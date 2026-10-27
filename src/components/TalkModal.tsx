@@ -34,7 +34,7 @@ export const TalkModal: React.FC<TalkModalProps> = ({ talk, onClose }) => {
   const currentSlide = slides[activeSlideIndex];
 
   const handleCopyCitation = () => {
-    const citation = `"${talk.title}" by Martin Gatimu. Presented at ${talk.event}, ${talk.date}. ${talk.location}. ${talk.slidesUrl || talk.videoUrl || ''}`;
+    const citation = `"${talk.title}" by Muchiri Gatimu. Presented at ${talk.event}, ${talk.date}. ${talk.location}. ${talk.slidesUrl || talk.videoUrl || ''}`;
     navigator.clipboard.writeText(citation);
     setCopiedCitation(true);
     setTimeout(() => setCopiedCitation(false), 2500);
@@ -167,7 +167,7 @@ export const TalkModal: React.FC<TalkModalProps> = ({ talk, onClose }) => {
                     SLIDE 0{currentSlide.slideNumber} • {talk.event}
                   </span>
                   <span className="text-[10px] font-mono text-neutral-400">
-                    Martin Gatimu
+                    Muchiri Gatimu
                   </span>
                 </div>
 
